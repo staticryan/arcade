@@ -1,10 +1,13 @@
 import arcade
+
+
 def drawBullseye():
     arcade.draw_circle_outline(800, 400, 201, arcade.color.CARMINE_RED, 425)
     arcade.draw_circle_filled(800, 400, 200, arcade.color.GHOST_WHITE)
     arcade.draw_circle_filled(800, 400, 150, arcade.color.CARMINE_RED)
     arcade.draw_circle_filled(800, 400, 100, arcade.color.GHOST_WHITE)
     arcade.draw_circle_filled(800, 400, 50, arcade.color.CARMINE_RED)
+
 
 arcade.open_window(1200, 700, "Lots of shapes")
 arcade.set_background_color(arcade.color.CHERRY_BLOSSOM_PINK)
@@ -19,6 +22,9 @@ drawBullseye()
 
 arcade.draw_triangle_filled(300, 600, 600, 600, 450, 350, arcade.color.AIR_FORCE_BLUE)
 arcade.draw_triangle_outline(300, 600, 490, 250, 700, 700, arcade.color.BATTLESHIP_GREY)
+
+arcade.draw_arc_filled(800, 75, 100, 100, arcade.color.YELLOW, 60, 330)
+arcade.draw_arc_outline(980, 75, 100, 100, arcade.color.AUROMETALSAURUS, -180, 0, 6)
 
 arcade.finish_render()
 
